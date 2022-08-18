@@ -22,3 +22,12 @@
 [submodule "app/components/titleLines"]
 	path = app/components/titleLines
 	url = https://github.com/kaukana0/titleLines.git
+[submodule "app/components/util"]
+	path = app/components/util
+	url = https://github.com/kaukana0/util.git
+[submodule "app/components/processorCountryNames"]
+	path = app/components/processorCountryNames
+	url = https://github.com/kaukana0/processorCountryNames.git
+[submodule "app/components/processorCountryOrder"]
+	path = app/components/processorCountryOrder
+	url = https://github.com/kaukana0/processorCountryOrder.git

@@ -13,3 +13,8 @@ body {
 html, body {
     height: 100%;
 }
+
+path {
+    fill: none;
+    stroke: black;
+}

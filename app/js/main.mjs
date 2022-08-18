@@ -1,11 +1,14 @@
+import * as chart from "../components/treeChart/treeChart.mjs"
 import "../components/dropdownBox/dropdownBox.mjs"
 import * as l10n from "../components/l10n/lang.mjs"
 import * as meta from "../components/metaTags/metaTags.mjs"
-import * as util from "../components/util/util.mjs"
+
 import * as pipeline from "../components/pipeline/pipeline.mjs"
-//import { process as extractOriginalRawData } from "./pipelineProcessors/originalRawData.mjs"
-import { process as defineCountryOrder } from "./pipelineProcessors/countryOrder.mjs"
+import {replaceEuInRawData} from "../components/util/util.mjs"
 import { process as extractCountries } from "../components/processorCountries/processor.mjs"
+import { process as defineCountryOrder } from "../components/processorCountryOrder/countryOrder.mjs"
+import { process as renameCountries } from "../components/processorCountryNames/countryNames.mjs"
+//import { process as extractOriginalRawData } from "./pipelineProcessors/originalRawData.mjs"
 
 
 init(run)
@@ -27,7 +30,7 @@ function run() {
 	const processingCfg = [
 		{
 			input : "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_exp?sector=S13&na_item=TE&time=2020",
-			processors: [defineCountryOrder, extractCountries]
+			processors: [defineCountryOrder, extractCountries, renameCountries]
 		}
 	]
 
@@ -49,7 +52,7 @@ function run() {
 		(e) => {
 			displayFailure(e)
 		},
-		util.replaceEuInRawData
+		replaceEuInRawData
 	)
 
 
