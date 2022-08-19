@@ -31,3 +31,6 @@
 [submodule "app/components/processorCountryOrder"]
 	path = app/components/processorCountryOrder
 	url = https://github.com/kaukana0/processorCountryOrder.git
+[submodule "app/components/chart"]
+	path = app/components/chart
+	url = https://github.com/kaukana0/chart.git

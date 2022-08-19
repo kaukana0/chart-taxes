@@ -11,10 +11,10 @@
 	<link rel="stylesheet" href="redist/bootstrap-5.1.3/bootstrap.min.css">
 	<script src="./redist/bootstrap-5.1.3/bootstrap.bundle.min.js"></script>
 
-	<!--script src="./redist/d3.v6.min.js"></script-->
+	<script src="./redist/d3.v6.min.js"></script>
 
-	<!--link rel="stylesheet" href="redist/billboard-3.4.1/billboard.min.css">
-	<script src="./redist/billboard-3.4.1/billboard.min.js"></script-->
+	<link rel="stylesheet" href="redist/billboard-3.4.1/billboard.min.css">
+	<script src="./redist/billboard-3.4.1/billboard.min.js"></script>
 
 
 	<link rel="stylesheet" href="redist/fontawesome-free-6.1.1-web/css/all.min.css">
@@ -73,8 +73,13 @@
 		</div>
 
 		<!-- row 4: chart  -->
-		<div class="row mt-2 h-50 align-items-center" style="min-height:70%;">
-			<svg id="treeChart" viewBox="0 0 500 500" style="height:100%; width:100%; background: lightgray;"></svg>
+		<div class="row mt-2 h-50" style="min-height:70%;">
+			<div class="col" style="height:100%; width:100%;">
+				<svg id="treeChart" viewBox="0 0 500 500" style="height:100%; width:100%; background: lightgray;"></svg>
+			</div>
+			<div class="col-2">
+				<div id="barChart"></div>
+			</div>
 		</div>
 
 		<!-- row 5: footer -->

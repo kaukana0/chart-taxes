@@ -1,4 +1,5 @@
 import * as treeChart from "../components/treeChart/treeChart.mjs"
+import * as chart from "../components/chart/chart.mjs"
 import "../components/dropdownBox/dropdownBox.mjs"
 import * as l10n from "../components/l10n/lang.mjs"
 import * as meta from "../components/metaTags/metaTags.mjs"
@@ -67,5 +68,16 @@ function run() {
 }
 
 function updateCharts(data, k) {
-	treeChart.draw("treeChart", data.allCofogsDataPerCountry.get(k))
+	treeChart.init("treeChart", data.allCofogsDataPerCountry.get(k))
+
+	chart.init({
+		type: "bar",
+		chartDOMElementId: "barChart",
+		legendDOMElementId: null,
+		cols: data.allCountriesDataPerCofog.get("GF01"),
+		tooltipTexts: data.countries,
+		suffixText: "Unit",
+		isRotated: true
+	})
+	chart.setYLabel("barChart", "Unit")
 }
