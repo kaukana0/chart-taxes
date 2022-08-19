@@ -1,4 +1,4 @@
-import * as chart from "../components/treeChart/treeChart.mjs"
+import * as treeChart from "../components/treeChart/treeChart.mjs"
 import "../components/dropdownBox/dropdownBox.mjs"
 import * as l10n from "../components/l10n/lang.mjs"
 import * as meta from "../components/metaTags/metaTags.mjs"
@@ -9,7 +9,8 @@ import { process as extractCountries } from "../components/processorCountries/pr
 import { process as defineCountryOrder } from "../components/processorCountryOrder/countryOrder.mjs"
 import { process as renameCountries } from "../components/processorCountryNames/countryNames.mjs"
 //import { process as extractOriginalRawData } from "./pipelineProcessors/originalRawData.mjs"
-
+import { process as extractAllCofogsDataPerCountry } from "./pipelineProcessors/allCofogsDataPerCountry.mjs"		// for treechart
+import { process as extractAllCountriesDataPerCofog } from "./pipelineProcessors/allCountriesDataPerCofog.mjs"	// for barchart
 
 init(run)
 
@@ -29,8 +30,9 @@ function init(callback) {
 function run() {
 	const processingCfg = [
 		{
-			input : "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_exp?sector=S13&na_item=TE&time=2020",
-			processors: [defineCountryOrder, extractCountries, renameCountries]
+//			input : "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_exp?sector=S13&na_item=TE&time=2020",
+			input : "persistedData/data2022-08-13.json",
+			processors: [defineCountryOrder, extractCountries, renameCountries, extractAllCofogsDataPerCountry, extractAllCountriesDataPerCofog]
 		}
 	]
 
@@ -39,8 +41,8 @@ function run() {
 		(data) => {
 			if(data	&& Object.keys(data).length > 0 && Object.getPrototypeOf(data) === Object.prototype) {
 				try {
+					document.getElementById("selectCountry").callback = (k, v) => updateCharts(data, k)
 					document.getElementById("selectCountry").data = [data.countries, data.groupChanges]
-					//document.getElementById("selectCountry").callback = (k, v) => dm.update(data, dm.ModeEnum.Country)
 					document.getElementById("loadingIndicator").style.display = "none"
 				} catch(e) {
 					displayFailure(e)
@@ -64,3 +66,6 @@ function run() {
 
 }
 
+function updateCharts(data, k) {
+	treeChart.draw("treeChart", data.allCofogsDataPerCountry.get(k))
+}

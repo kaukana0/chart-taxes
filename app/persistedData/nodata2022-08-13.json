@@ -1,0 +1,399 @@
+{
+    "version": "2.0",
+    "class": "dataset",
+    "label": "General government expenditure by function (COFOG)",
+    "source": "ESTAT",
+    "updated": "2022-07-21T23:00:00+0200",
+    "value": {},
+    "status": {},
+    "id": [
+        "freq",
+        "unit",
+        "sector",
+        "cofog99",
+        "na_item",
+        "geo",
+        "time"
+    ],
+    "size": [
+        1,
+        4,
+        1,
+        80,
+        1,
+        32,
+        1
+    ],
+    "dimension": {
+        "freq": {
+            "label": "Time frequency",
+            "category": {
+                "index": {
+                    "A": 0
+                },
+                "label": {
+                    "A": "Annual"
+                }
+            }
+        },
+        "unit": {
+            "label": "Unit of measure",
+            "category": {
+                "index": {
+                    "MIO_EUR": 0,
+                    "MIO_NAC": 1,
+                    "PC_GDP": 2,
+                    "PC_TOT": 3
+                },
+                "label": {
+                    "MIO_EUR": "Million euro",
+                    "MIO_NAC": "Million units of national currency",
+                    "PC_GDP": "Percentage of gross domestic product (GDP)",
+                    "PC_TOT": "Percentage of total"
+                }
+            }
+        },
+        "sector": {
+            "label": "Sector",
+            "category": {
+                "index": {
+                    "S13": 0
+                },
+                "label": {
+                    "S13": "General government"
+                }
+            }
+        },
+        "cofog99": {
+            "label": "Classification of the functions of government (COFOG 1999)",
+            "category": {
+                "index": {
+                    "TOTAL": 0,
+                    "GF01": 1,
+                    "GF0101": 2,
+                    "GF0102": 3,
+                    "GF0103": 4,
+                    "GF0104": 5,
+                    "GF0105": 6,
+                    "GF0106": 7,
+                    "GF0107": 8,
+                    "GF0108": 9,
+                    "GF02": 10,
+                    "GF0201": 11,
+                    "GF0202": 12,
+                    "GF0203": 13,
+                    "GF0204": 14,
+                    "GF0205": 15,
+                    "GF03": 16,
+                    "GF0301": 17,
+                    "GF0302": 18,
+                    "GF0303": 19,
+                    "GF0304": 20,
+                    "GF0305": 21,
+                    "GF0306": 22,
+                    "GF04": 23,
+                    "GF0401": 24,
+                    "GF0402": 25,
+                    "GF0403": 26,
+                    "GF0404": 27,
+                    "GF0405": 28,
+                    "GF0406": 29,
+                    "GF0407": 30,
+                    "GF0408": 31,
+                    "GF0409": 32,
+                    "GF05": 33,
+                    "GF0501": 34,
+                    "GF0502": 35,
+                    "GF0503": 36,
+                    "GF0504": 37,
+                    "GF0505": 38,
+                    "GF0506": 39,
+                    "GF06": 40,
+                    "GF0601": 41,
+                    "GF0602": 42,
+                    "GF0603": 43,
+                    "GF0604": 44,
+                    "GF0605": 45,
+                    "GF0606": 46,
+                    "GF07": 47,
+                    "GF0701": 48,
+                    "GF0702": 49,
+                    "GF0703": 50,
+                    "GF0704": 51,
+                    "GF0705": 52,
+                    "GF0706": 53,
+                    "GF08": 54,
+                    "GF0801": 55,
+                    "GF0802": 56,
+                    "GF0803": 57,
+                    "GF0804": 58,
+                    "GF0805": 59,
+                    "GF0806": 60,
+                    "GF09": 61,
+                    "GF0901": 62,
+                    "GF0902": 63,
+                    "GF0903": 64,
+                    "GF0904": 65,
+                    "GF0905": 66,
+                    "GF0906": 67,
+                    "GF0907": 68,
+                    "GF0908": 69,
+                    "GF10": 70,
+                    "GF1001": 71,
+                    "GF1002": 72,
+                    "GF1003": 73,
+                    "GF1004": 74,
+                    "GF1005": 75,
+                    "GF1006": 76,
+                    "GF1007": 77,
+                    "GF1008": 78,
+                    "GF1009": 79
+                },
+                "label": {
+                    "TOTAL": "Total",
+                    "GF01": "General public services",
+                    "GF0101": "Executive and legislative organs, financial and fiscal affairs, external affairs",
+                    "GF0102": "Foreign economic aid",
+                    "GF0103": "General services",
+                    "GF0104": "Basic research",
+                    "GF0105": "R&D General public services",
+                    "GF0106": "General public services n.e.c.",
+                    "GF0107": "Public debt transactions",
+                    "GF0108": "Transfers of a general character between different levels of government",
+                    "GF02": "Defence",
+                    "GF0201": "Military defence",
+                    "GF0202": "Civil defence",
+                    "GF0203": "Foreign military aid",
+                    "GF0204": "R&D Defence",
+                    "GF0205": "Defence n.e.c.",
+                    "GF03": "Public order and safety",
+                    "GF0301": "Police services",
+                    "GF0302": "Fire-protection services",
+                    "GF0303": "Law courts",
+                    "GF0304": "Prisons",
+                    "GF0305": "R&D Public order and safety",
+                    "GF0306": "Public order and safety n.e.c.",
+                    "GF04": "Economic affairs",
+                    "GF0401": "General economic, commercial and labour affairs",
+                    "GF0402": "Agriculture, forestry, fishing and hunting",
+                    "GF0403": "Fuel and energy",
+                    "GF0404": "Mining, manufacturing and construction",
+                    "GF0405": "Transport",
+                    "GF0406": "Communication",
+                    "GF0407": "Other industries",
+                    "GF0408": "R&D Economic affairs",
+                    "GF0409": "Economic affairs n.e.c.",
+                    "GF05": "Environmental protection",
+                    "GF0501": "Waste management",
+                    "GF0502": "Waste water management",
+                    "GF0503": "Pollution abatement",
+                    "GF0504": "Protection of biodiversity and landscape",
+                    "GF0505": "R&D Environmental protection",
+                    "GF0506": "Environmental protection n.e.c.",
+                    "GF06": "Housing and community amenities",
+                    "GF0601": "Housing development",
+                    "GF0602": "Community development",
+                    "GF0603": "Water supply",
+                    "GF0604": "Street lighting",
+                    "GF0605": "R&D Housing and community amenities",
+                    "GF0606": "Housing and community amenities n.e.c.",
+                    "GF07": "Health",
+                    "GF0701": "Medical products, appliances and equipment",
+                    "GF0702": "Outpatient services",
+                    "GF0703": "Hospital services",
+                    "GF0704": "Public health services",
+                    "GF0705": "R&D Health",
+                    "GF0706": "Health n.e.c.",
+                    "GF08": "Recreation, culture and religion",
+                    "GF0801": "Recreational and sporting services",
+                    "GF0802": "Cultural services",
+                    "GF0803": "Broadcasting and publishing services",
+                    "GF0804": "Religious and other community services",
+                    "GF0805": "R&D Recreation, culture and religion",
+                    "GF0806": "Recreation, culture and religion n.e.c.",
+                    "GF09": "Education",
+                    "GF0901": "Pre-primary and primary education",
+                    "GF0902": "Secondary education",
+                    "GF0903": "Post-secondary non-tertiary education",
+                    "GF0904": "Tertiary education",
+                    "GF0905": "Education not definable by level",
+                    "GF0906": "Subsidiary services to education",
+                    "GF0907": "R&D Education",
+                    "GF0908": "Education n.e.c.",
+                    "GF10": "Social protection",
+                    "GF1001": "Sickness and disability",
+                    "GF1002": "Old age",
+                    "GF1003": "Survivors",
+                    "GF1004": "Family and children",
+                    "GF1005": "Unemployment",
+                    "GF1006": "Housing",
+                    "GF1007": "Social exclusion n.e.c.",
+                    "GF1008": "R&D Social protection",
+                    "GF1009": "Social protection n.e.c."
+                }
+            }
+        },
+        "na_item": {
+            "label": "National accounts indicator (ESA 2010)",
+            "category": {
+                "index": {
+                    "TE": 0
+                },
+                "label": {
+                    "TE": "Total general government expenditure"
+                }
+            }
+        },
+        "geo": {
+            "label": "Geopolitical entity (reporting)",
+            "category": {
+                "index": {
+                    "EU27_2020": 0,
+                    "EA19": 1,
+                    "BE": 2,
+                    "BG": 3,
+                    "CZ": 4,
+                    "DK": 5,
+                    "DE": 6,
+                    "EE": 7,
+                    "IE": 8,
+                    "EL": 9,
+                    "ES": 10,
+                    "FR": 11,
+                    "HR": 12,
+                    "IT": 13,
+                    "CY": 14,
+                    "LV": 15,
+                    "LT": 16,
+                    "LU": 17,
+                    "HU": 18,
+                    "MT": 19,
+                    "NL": 20,
+                    "AT": 21,
+                    "PL": 22,
+                    "PT": 23,
+                    "RO": 24,
+                    "SI": 25,
+                    "SK": 26,
+                    "FI": 27,
+                    "SE": 28,
+                    "IS": 29,
+                    "NO": 30,
+                    "CH": 31
+                },
+                "label": {
+                    "EU27_2020": "European Union - 27 countries (from 2020)",
+                    "EA19": "Euro area - 19 countries  (from 2015)",
+                    "BE": "Belgium",
+                    "BG": "Bulgaria",
+                    "CZ": "Czechia",
+                    "DK": "Denmark",
+                    "DE": "Germany (until 1990 former territory of the FRG)",
+                    "EE": "Estonia",
+                    "IE": "Ireland",
+                    "EL": "Greece",
+                    "ES": "Spain",
+                    "FR": "France",
+                    "HR": "Croatia",
+                    "IT": "Italy",
+                    "CY": "Cyprus",
+                    "LV": "Latvia",
+                    "LT": "Lithuania",
+                    "LU": "Luxembourg",
+                    "HU": "Hungary",
+                    "MT": "Malta",
+                    "NL": "Netherlands",
+                    "AT": "Austria",
+                    "PL": "Poland",
+                    "PT": "Portugal",
+                    "RO": "Romania",
+                    "SI": "Slovenia",
+                    "SK": "Slovakia",
+                    "FI": "Finland",
+                    "SE": "Sweden",
+                    "IS": "Iceland",
+                    "NO": "Norway",
+                    "CH": "Switzerland"
+                }
+            }
+        },
+        "time": {
+            "label": "Time",
+            "category": {
+                "index": {
+                    "2020": 0
+                },
+                "label": {
+                    "2020": "2020"
+                }
+            }
+        }
+    },
+    "extension": {
+        "lang": "EN",
+        "id": "GOV_10A_EXP",
+        "agencyId": "ESTAT",
+        "version": "1.0",
+        "datastructure": {
+            "id": "GOV_10A_EXP",
+            "agencyId": "ESTAT",
+            "version": "37.0"
+        },
+        "annotation": [
+            {
+                "type": "DISSEMINATION_OBJECT_TYPE",
+                "title": "DATASET"
+            },
+            {
+                "type": "ESMS_HTML",
+                "title": "Explanatory texts (metadata)",
+                "href": "https://ec.europa.eu/eurostat/cache/metadata/en/gov_10a_exp_esms.htm"
+            },
+            {
+                "type": "ESMS_SDMX",
+                "title": "Explanatory texts (metadata)",
+                "href": "https://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?file=metadata/gov_10a_exp_esms.sdmx.zip"
+            },
+            {
+                "type": "OBS_COUNT",
+                "title": "31143075"
+            },
+            {
+                "type": "OBS_PERIOD_OVERALL_LATEST",
+                "title": "2020"
+            },
+            {
+                "type": "OBS_PERIOD_OVERALL_OLDEST",
+                "title": "1990"
+            },
+            {
+                "type": "SOURCE_INSTITUTIONS",
+                "text": "Eurostat"
+            },
+            {
+                "type": "UPDATE_DATA",
+                "date": "2022-07-21T23:00:00+0200"
+            },
+            {
+                "type": "UPDATE_STRUCTURE",
+                "date": "2022-02-22T11:00:00+0100"
+            }
+        ],
+        "status": {
+            "label": {
+                "n": "not significant",
+                "p": "provisional",
+                "z": "not applicable"
+            }
+        },
+        "positions-with-no-data": {
+            "freq": [],
+            "unit": [],
+            "sector": [],
+            "cofog99": [],
+            "na_item": [],
+            "geo": [],
+            "time": []
+        }
+    }
+}

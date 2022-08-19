@@ -1,7 +1,7 @@
 # how to run
 
-    git clone https://github.com/kaukana0/tool-foodPriceMonitoring.git
-    cd tool-foodPriceMonitoring/
+    git clone https://github.com/kaukana0/chart-taxes.git
+    cd chart-taxes/
     git submodule init
     git submodule update
     cd app ; python3 -m http.server 9000
@@ -20,3 +20,6 @@
 # what it looks like
 
 ![Screenshot](./app/img/screenshot.png)
+
+
+# the big picture
