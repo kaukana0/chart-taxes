@@ -75,7 +75,7 @@ function updateCharts(data, k) {
 		chartDOMElementId: "barChart",
 		legendDOMElementId: null,
 		cols: data.allCountriesDataPerCofog.get("GF01"),
-		tooltipTexts: data.countries,
+		tooltipTexts: data.cofogLabels,
 		suffixText: "Unit",
 		isRotated: true
 	})

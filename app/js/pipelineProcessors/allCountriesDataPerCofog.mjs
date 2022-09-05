@@ -7,7 +7,10 @@
 export function process(inputData, output) {
     output["allCountriesDataPerCofog"] = new Map()
     output["allCountriesDataPerCofog"].set("GF01", [ 
-        ["x", "EU", "AT", "DK"],
-        ["", 10, 20, 30] 
+        ["EU", "AT", "DK"],
+        ["GF01", 10, 20, 30],
+//        ["S2", 30, 10, 20] 
     ])
+    output["cofogLabels"] = new Map()
+    output["cofogLabels"].set("GF01", "General public services")
 }
